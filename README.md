@@ -1,6 +1,8 @@
 # BitBucket OAuth Migration Demo
 
 This demo application showcases the migration path from OAuth 1.0a to OAuth 2.0 using BitBucket as an example. It demonstrates enterprise authentication scenarios and features both legacy and modern authentication methods.
+![image](https://github.com/user-attachments/assets/3efabb06-f360-43aa-92a7-ddcff0aa4988)
+
 
 ## Features
 
@@ -26,7 +28,7 @@ This demo application showcases the migration path from OAuth 1.0a to OAuth 2.0 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/[your-username]/authomatic-bitbucket-demo
+git clone https://github.com/Faakhir30/authomatic-bitbucket-demo
 cd authomatic-bitbucket-demo
 ```
 
