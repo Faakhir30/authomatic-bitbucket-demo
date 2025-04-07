@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="min-h-[calc(100vh-12rem)] flex flex-col items-center justify-center">
+    <div class="bg-white p-8 rounded-lg shadow-md max-w-md w-full">
+        <h1 class="text-2xl font-bold text-center mb-8">Choose Authentication Method</h1>
+        
+        <div class="space-y-4">
+            <a href="/login/bitbucket_legacy" 
+               class="w-full flex items-center justify-center px-4 py-3 border border-gray-300 rounded-md shadow-sm text-base font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-bitbucket">
+                <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M2.65,19.35a1,1,0,0,1-1.41-1.41L4.59,14.5,1.24,11.15a1,1,0,0,1,1.41-1.41L6,13.09l3.35-3.35a1,1,0,0,1,1.41,1.41L7.41,14.5l3.35,3.35a1,1,0,0,1-1.41,1.41L6,15.91Z"/>
+                </svg>
+                Sign in with BitBucket (Legacy OAuth 1.0a)
+            </a>
+
+            <a href="/login/bitbucket_modern"
+               class="w-full flex items-center justify-center px-4 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-bitbucket hover:bg-bitbucket_dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-bitbucket">
+                <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.24,15.66L12,19.59,7.76,17.66A.5.5,0,0,1,7.5,17V7.83a.5.5,0,0,1,.74-.44L12,9.41l3.76-2.02a.5.5,0,0,1,.74.44V17A.5.5,0,0,1,16.24,17.66Z"/>
+                </svg>
+                Sign in with BitBucket (OAuth 2.0)
+            </a>
+        </div>
+
+        <div class="mt-8">
+            <p class="text-sm text-gray-500 text-center">
+                This demo showcases the migration from OAuth 1.0a to OAuth 2.0 in BitBucket authentication.
+                Choose either method to explore the differences in implementation and features.
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}
